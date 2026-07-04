@@ -1,11 +1,13 @@
 # 🚀 Eureka Server
-==================
+
 A production-ready **Spring Cloud Netflix Eureka Server** built with **Spring Boot** for service discovery in a microservices architecture.
 
 This project acts as the **Service Registry**, allowing microservices to dynamically register themselves and discover other services without hardcoding network locations.
 
+---
+
 ## 📌 Features
-===============
+
 - Service Discovery using Netflix Eureka
 - Centralized Service Registry
 - Dynamic Registration of Microservices
@@ -16,9 +18,11 @@ This project acts as the **Service Registry**, allowing microservices to dynamic
 - Java 17
 - Lightweight Configuration
 - Ready for Microservices Architecture
-- 
+
+---
+
 ## 🛠 Tech Stack
-===============
+
 | Technology | Version |
 |------------|---------|
 | Java | 17 |
@@ -28,17 +32,48 @@ This project acts as the **Service Registry**, allowing microservices to dynamic
 | Maven | 3.x |
 | IntelliJ IDEA | Ultimate Edition |
 
+---
+
+## 📂 Project Structure
+
+```
+EurekaServer
+│
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com.abcd.eurekaserver
+│   │   │       └── EurekaServerApplication.java
+│   │   │
+│   │   └── resources
+│   │       └── application.properties
+│   │
+│   └── test
+│       └── EurekaServerApplicationTests.java
+│
+├── pom.xml
+├── mvnw
+├── mvnw.cmd
+└── README.md
+```
+
+---
+
 ## ⚙️ Configuration
-====================
-application.properties
----------------------
+
+```properties
 spring.application.name=EurekaServer
+
 server.port=8761
+
 eureka.client.register-with-eureka=false
 eureka.client.fetch-registry=false
+```
+
+---
 
 ## ▶️ Run the Application
-=========================
+
 ### Clone Repository
 
 ```bash
@@ -85,10 +120,15 @@ You should see the Eureka Dashboard.
 
 > **Tip:** Add a screenshot of the dashboard inside a `screenshots/` folder and reference it here.
 
+```md
 ![Dashboard](screenshots/eureka-dashboard.png)
+```
+
+---
 
 ## 🏗 Architecture
-==================
+
+```
                    +----------------------+
                    |    Eureka Server     |
                    |      Port 8761       |
@@ -100,9 +140,11 @@ You should see the Eureka Dashboard.
 +-------------+      +---------------+      +---------------+
 | User Service|      | Order Service |      | Product Service|
 +-------------+      +---------------+      +---------------+
+```
 
+---
 
-## 📦 Maven Dependencies added
+## 📦 Maven Dependencies
 
 - Spring Boot Starter Web
 - Spring Cloud Netflix Eureka Server
@@ -110,7 +152,10 @@ You should see the Eureka Dashboard.
 - Lombok
 - Spring Boot Test
 
+---
+
 ## 🔮 Future Enhancements
+
 - Docker Support
 - Docker Compose
 - Config Server Integration
@@ -123,12 +168,18 @@ You should see the Eureka Dashboard.
 
 ---
 
-# Aditya Pandey
-# Java Full Stack Developer
+## 👨‍💻 Author
+
+**Aditya Pandey**
+
+Java Full Stack Developer
+
 - Java
 - Spring Boot
 - Microservices
 - React
 - AWS
 - Docker
+
+---
 
